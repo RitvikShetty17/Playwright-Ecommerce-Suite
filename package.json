@@ -1,0 +1,24 @@
+{
+  "name": "playwright-ecommerce-suite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RitvikShetty17/Playwright-Ecommerce-Suite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/RitvikShetty17/Playwright-Ecommerce-Suite/issues"
+  },
+  "homepage": "https://github.com/RitvikShetty17/Playwright-Ecommerce-Suite#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.61.1"
+  }
+}
