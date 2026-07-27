@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/RitvikShetty17/Playwright-Ecommerce-Suite#readme",
   "devDependencies": {
-    "@playwright/test": "^1.61.1"
+    "@playwright/test": "^1.61.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^7.0.2"
   }
 }
