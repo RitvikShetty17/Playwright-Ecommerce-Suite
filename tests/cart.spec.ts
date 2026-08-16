@@ -2,7 +2,8 @@ import { test, expect } from '../fixtures/auth';
 
 test.describe('Cart Flow', () => {
 
-  test('added item appears in cart @smoke', 
+  test('added item appears in cart',
+    { tag: '@smoke' },
     async ({ authenticatedPage: page, productsPage, cartPage }) => {
       await productsPage.addToCartByName('Sauce Labs Backpack');
       await page.locator('.shopping_cart_link').click();
@@ -12,7 +13,8 @@ test.describe('Cart Flow', () => {
       expect(itemNames).toContain('Sauce Labs Backpack');
   });
 
-  test('multiple items appear in cart @regression', 
+  test('multiple items appear in cart',
+    { tag: '@regression' },
     async ({ authenticatedPage: page, productsPage, cartPage }) => {
       await productsPage.addToCartByName('Sauce Labs Backpack');
       await productsPage.addToCartByName('Sauce Labs Bike Light');
@@ -23,7 +25,8 @@ test.describe('Cart Flow', () => {
       expect(itemNames).toContain('Sauce Labs Bike Light');
   });
 
-  test('removing item from cart updates cart @regression', 
+  test('removing item from cart updates cart',
+    { tag: '@regression' },
     async ({ authenticatedPage: page, productsPage, cartPage }) => {
       await productsPage.addToCartByName('Sauce Labs Backpack');
       await page.locator('.shopping_cart_link').click();
